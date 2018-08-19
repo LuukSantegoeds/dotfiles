@@ -1,0 +1,39 @@
+# i3 keybindings
+Mod key = alt
+
+No window border = Mod+u
+2px window border = Mod+y
+Normal window border = Mod+n
+
+Launch terminal = Mod+return
+Kill window = Mod+shift+q
+Program launcher = Mod+d
+Pavucontrol = Mod+ctrl+m
+Nautilus = Mod+g
+
+Focus left = Mod+left
+Focus right = Mod+right
+Focus up = Mod+up
+Focus down = Mod+down
+
+Split orientation horizontally = Mod+h
+Split orientation vertically = Mod+v
+Split orientation toggle = Mod+q
+
+Toggle fullscreen = Mod+f
+Toggle floating = Mod+shift+space
+Change focus between tiling/floating = Mod+space
+Toggle sticky = Mod+shift+s
+Focus parent = Mod+a
+Resize = Mod+r
+
+Workspace next = Mod+ctrl+right
+Workspace previous = Mod+ctrl+left
+Switch to workspace = Mod+[nr]
+Send to workspace = Mod+ctrl+[nr]
+Send to workspace and move = Mod+shift+[nr]
+
+Reload i3 config = Mod+shift+c
+Restart i3 = Mod+shift+r
+
+Send system signal = Mod+0
