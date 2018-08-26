@@ -19,8 +19,8 @@ secondary = #545454
 alert = #545454
 
 [bar/main]
-monitor = eDP-1
-monitor-fallback = HDMI-1
+monitor = HDMI-0
+monitor-fallback = DP-1
 width = 100%
 height = 24
 ;offset-x = 1%
@@ -50,7 +50,7 @@ font-4 = "Font Awesome 5 Brands:pixelsize=10;1"
 
 modules-left = i3
 modules-center = date
-modules-right = current_draw battery
+modules-right = spotify current_draw
 
 tray-position = right
 tray-padding = 2
@@ -272,30 +272,6 @@ bar-volume-empty = ─
 bar-volume-empty-font = 2
 bar-volume-empty-foreground = ${colors.foreground-alt}
 
-[module/battery]
-type = internal/battery
-battery = BAT1
-adapter = ADP1
-full-at = 100
-
-format-charging = <animation-charging> <label-charging>
-
-format-discharging = <ramp-capacity> <label-discharging>
-
-format-full-prefix = ""
-format-full-prefix-foreground = ${colors.foreground-alt}
-
-ramp-capacity-0 = 
-ramp-capacity-1 = 
-ramp-capacity-2 = 
-ramp-capacity-foreground = ${colors.foreground-alt}
-
-animation-charging-0 = 
-animation-charging-1 = 
-animation-charging-2 = 
-animation-charging-foreground = ${colors.foreground-alt}
-animation-charging-framerate = 750
-
 [module/temperature]
 type = internal/temperature
 thermal-zone = 0
@@ -341,6 +317,14 @@ menu-2-0 = power off
 menu-2-0-exec = sudo poweroff
 menu-2-1 = cancel
 menu-2-1-exec = menu-open-0
+
+[module/spotify]
+type = custom/script
+interval = 1
+;format-prefix = " "
+format = <label>
+exec = python ~/bin/spotify_status.py -f '{artist}: {song}'
+format-underline = #1db954
 
 [module/current_draw]
 type = custom/script
