@@ -21,7 +21,7 @@ bindsym $mod+n border normal
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font tewi 8
+# font tewi 8
 
 # Use Mouse+$mod to drag floating windows
 floating_modifier $mod
@@ -35,6 +35,9 @@ bindsym $mod+Shift+q kill
 # start program launcher
 bindsym $mod+d exec --no-startup-id rofi -modi run -show drun
 
+# start gedit
+bindsym $mod+t exec --no-startup-id gedit
+
 ################################################################################################
 ## sound-section - DO NOT EDIT if you wish to automatically upgrade Alsa -> Pulseaudio later! ##
 ################################################################################################
@@ -45,9 +48,10 @@ bindsym $mod+Ctrl+m exec pavucontrol
 ################################################################################################
 
 # Screenshot keybindings
-bindsym Print --release exec --no-startup-id i3-scrot
-bindsym $mod+Print --release exec --no-startup-id i3-scrot -w
-bindsym $mod+Shift+Print --release exec --no-startup-id i3-scrot -s
+# bindsym Print --release exec --no-startup-id i3-scrot
+# bindsym $mod+Print --release exec --no-startup-id i3-scrot -w
+# bindsym $mod+Shift+Print --release exec --no-startup-id i3-scrot -s
+bindsym Print --release exec --no-startup-id gnome-screenshot -i
 
 # Monitor keybindings
 # bindsym $mod+Shift+F1 exec --no-startup-id monitor single
@@ -97,7 +101,7 @@ bindsym $mod+Right focus right
 
 # workspace back and forth (with/without active container)
 workspace_auto_back_and_forth yes
-# bindsym $mod+b workspace back_and_forth
+# bindsym $mod+Shift+a workspace back_and_forth
 # bindsym $mod+Shift+b move container to workspace back_and_forth; workspace back_and_forth
 
 # split orientation
@@ -127,7 +131,7 @@ bindsym $mod+space focus mode_toggle
 bindsym $mod+Shift+s sticky toggle
 
 # focus the parent container
-bindsym $mod+a focus parent
+# bindsym $mod+a focus parent
 
 # Scratchpad
 # move the currently focused window to the scratchpad
@@ -137,8 +141,8 @@ bindsym $mod+a focus parent
 # bindsym $mod+minus scratchpad show
 
 #navigate workspaces next / previous
-bindsym $mod+Ctrl+Right workspace next
-bindsym $mod+Ctrl+Left workspace prev
+bindsym $mod+s workspace next
+bindsym $mod+a workspace prev
 
 # Workspace names
 # to display names or symbols instead of plain workspace numbers you can use
@@ -274,10 +278,9 @@ mode "resize" {
 # Autostart applications
 exec --no-startup-id ~/bin/launch-polybar.sh
 exec --no-startup-id nm-applet
-exec --no-startup-id owncloud
+exec --no-startup-id insync start
 exec --no-startup-id blueman-applet
-exec --no-startup-id octopi-notifier
-exec --no-startup-id msm_kde_notifier
+exec --no-startup-id sh -c "GDK_BACKEND=x11 pamac-tray"
 
 # Theme colors
 # class                 border  backgr. text    indic.  child_border
@@ -288,15 +291,15 @@ client.urgent           #CB4B16 #FDF6E3 #16A085 #268BD2
 client.placeholder      #000000 #0c0c0c #ffffff #000000 #0c0c0c
 
 # Set background
-exec --no-startup-id feh --bg-fill ~/Pictures/Wallpapers/manjaro.jpg
+exec --no-startup-id feh --bg-fill ~/Pictures/Wallpapers/wallpaperbro-404413
 
 #############################
 ### settings for i3-gaps: ###
 #############################
 
 # Set inner/outer gaps
-# gaps inner 10
-# gaps outer -4
+gaps inner 15
+# gaps outer 4
 
 # Additionally, you can issue commands with the following syntax. This is useful to bind keys to changing the gap size.
 # gaps inner|outer current|all set|plus|minus <px>
