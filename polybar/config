@@ -19,8 +19,8 @@ secondary = #545454
 alert = #545454
 
 [bar/main]
-monitor = eDP1
-monitor-fallback = HDMI2
+monitor = HDMI2
+monitor-fallback = eDP1
 width = 100%
 height = 24
 ;offset-x = 1%
@@ -50,7 +50,7 @@ font-4 = "Font Awesome 5 Brands:pixelsize=10;1"
 
 modules-left = i3
 modules-center = date
-modules-right = spotify current_draw battery
+modules-right = nordvpn spotify current_draw battery
 
 tray-position = right
 tray-padding = 2
@@ -359,6 +359,12 @@ interval = 1
 format = <label>
 exec = python ~/bin/spotify_status.py -f '{artist}: {song}'
 format-underline = #1db954
+
+[module/nordvpn]
+type = custom/script
+interval = 1
+exec = ~/bin/nordvpn_status.sh
+format-underline = #4687ff
 
 [settings]
 screenchange-reload = true
