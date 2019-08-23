@@ -69,8 +69,8 @@ bindsym $mod+Shift+Right exec --no-startup-id playerctl next
 bindsym $mod+Shift+Left exec --no-startup-id playerctl previous
 	
 # Brightness keybindings
-bindsym XF86MonBrightnessUp exec xbacklight -inc 20 # increase screen brightness
-bindsym XF86MonBrightnessDown exec xbacklight -dec 20 # decrease screen brightness
+# bindsym XF86MonBrightnessUp exec xbacklight -inc 20 # increase screen brightness
+# bindsym XF86MonBrightnessDown exec xbacklight -dec 20 # decrease screen brightness
 
 # Touchpad controls
 bindsym XF86TouchpadToggle exec /home/luuks/bin/toggletouchpad.sh # toggle touchpad
@@ -265,10 +265,10 @@ mode "resize" {
         # bindsym semicolon resize grow width 1 px or 1 ppt
 
         # same bindings, but for the arrow keys
-        bindsym Left resize shrink width 10 px or 10 ppt
-        bindsym Down resize grow height 10 px or 10 ppt
-        bindsym Up resize shrink height 10 px or 10 ppt
-        bindsym Right resize grow width 10 px or 10 ppt
+        bindsym Left resize shrink width 5 px or 5 ppt
+        bindsym Down resize grow height 5 px or 5 ppt
+        bindsym Up resize shrink height 5 px or 5 ppt
+        bindsym Right resize grow width 5 px or 5 ppt
 
         # exit resize mode: Enter or Escape
         bindsym Return mode "default"
