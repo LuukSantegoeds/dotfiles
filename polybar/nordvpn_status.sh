@@ -1,8 +1,8 @@
 #!/bin/bash
 
-status=`nordvpn status`
+status=`nordvpn status | grep Status`
 
-if [[ $status == *"Whoops"* ]]; then
+if [[ $status == "" ]]; then
 	echo "NordVPN: daemon off"
 else
 	status=(${status[@]})
