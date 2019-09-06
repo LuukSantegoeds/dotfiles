@@ -1,0 +1,67 @@
+{
+    "window.menuBarVisibility": "toggle",
+    "editor.wordWrap": "on",
+    "workbench.statusBar.visible": true,
+    "workbench.activityBar.visible": true,
+    "window.zoomLevel": 0,
+    "workbench.startupEditor": "none",
+    "update.mode": "none",
+    "workbench.colorTheme": "One Dark Pro",
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.colorCustomizations": {
+        "editor.background": "#0F161E",
+        "menu.background": "#0F161E",
+        "panel.background": "#0F161E",
+        "terminal.background": "#0F161E",
+        "sideBar.background": "#0F161E",
+        "input.background": "#0F161E",
+        "badge.background": "#0F161E",
+        "statusBar.background": "#0F161E",
+        "breadcrumb.background": "#0F161E",
+        "activityBar.background": "#0F161E",
+        "dropdown.background": "#0F161E",
+        "list.dropBackground": "#0F161E",
+        "button.background": "#0F161E",
+        "editorPane.background": "#0F161E",
+        "welcomePage.background": "#0F161E",
+        "selection.background": "#0F161E",
+        "debugToolBar.background": "#0F161E",
+        "menu.separatorBackground": "#0F161E",
+        "editorBracketMatch.background": "#0F161E",
+        "editorMarkerNavigation.background": "#0F161E",
+        "panel.dropBackground": "#0F161E",
+        "notifications.background": "#0F161E",
+        "editorGroupHeader.tabsBackground": "#0F161E",
+        "titleBar.activeBackground": "#0F161E",
+        "tab.inactiveBackground": "#0F161E",
+        "editor.lineHighlightBackground": "#192431",
+        "sideBarSectionHeader.background": "#0F161E",
+    },
+    "files.autoSave": "off",
+    "todo-tree.defaultHighlight": {
+        "foreground": "green",
+        "type": "none"
+    },
+    "todo-tree.customHighlight": {
+        "TODO": {},
+        "FIXME": {}
+    },
+    "todo-tree.tags": [
+        "TODO",
+        "FIXME"
+    ],
+    "window.restoreWindows": "none",
+    "vim.useSystemClipboard": true,
+    "vim.useCtrlKeys": true,
+    "terminal.integrated.rendererType": "dom",
+    "java.configuration.checkProjectSettingsExclusions": false,
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "[php]": {
+        "editor.defaultFormatter": "kokororin.vscode-phpfmt"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "C_Cpp.updateChannel": "Insiders"
+}

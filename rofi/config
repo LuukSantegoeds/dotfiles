@@ -1,0 +1,17 @@
+rofi.modi:              drun,run
+rofi.font:              inconsolata 15
+rofi.location:          0
+rofi.color-enabled:     true
+rofi.color-window:      #0F161E, #0F161E, #ffffff
+rofi.color-normal:      #0F161E, #ffffff, #0F161E, #808280, #ffffff
+rofi.color-active:      #0F161E, #ffffff, #0F161E, #808280, #ffffff
+rofi.color-urgent:      #0F161E, #ffffff, #0F161E, #ffffff, #000000
+rofi.separator-style:   solid
+rofi.fullscreen:        false
+rofi.padding:           10
+rofi.hide-scrollbar:    true
+rofi.line-margin:       4
+rofi.yoffset:           0
+rofi.xoffset:           0
+rofi.width:             25
+rofi.lines:             8
