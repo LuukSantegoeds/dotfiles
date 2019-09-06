@@ -1,4 +1,5 @@
 /* See LICENSE file for copyright and license details. */
+/*     This config is tweaked by Peter-Jan Gootzen     */
 
 /*
  * appearance
@@ -6,7 +7,7 @@
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
 static char *font = "Inconsolata:pixelsize=14:antialias=true:autohint=true";
-static int borderpx = 2;
+static int borderpx = 10;
 
 /*
  * What program is execed by st depends of these precedence rules:
@@ -16,7 +17,7 @@ static int borderpx = 2;
  * 4: value of shell in /etc/passwd
  * 5: value of shell in config.h
  */
-static char *shell = "/usr/bin/zsh";
+static char *shell = "/bin/sh";
 char *utmp = NULL;
 char *stty_args = "stty raw pass8 nl -echo -iexten -cstopb 38400";
 
@@ -32,7 +33,7 @@ static float chscale = 1.0;
  *
  * More advanced example: " `'\"()[]{}"
  */
-char *worddelimiters = " ";
+wchar_t *worddelimiters = L" ";
 
 /* selection timeouts (in milliseconds) */
 static unsigned int doubleclicktimeout = 300;
@@ -84,26 +85,7 @@ unsigned int tabspaces = 8;
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
-	// /* 8 normal colors */
-	// "black",
-	// "red3",
-	// "green3",
-	// "yellow3",
-	// "blue2",
-	// "magenta3",
-	// "cyan3",
-	// "gray90",
-
-	// /* 8 bright colors */
-	// "gray50",
-	// "red",
-	// "green",
-	// "yellow",
-	// "#5c5cff",
-	// "magenta",
-	// "cyan",
-	// "white",
-	"#000000",  /*  0: black    */
+    "#000000",  /*  0: black    */
 	"#FF5555",  /*  1: red      */
 	"#50FA7B",  /*  2: green    */
 	"#F1FA8C",  /*  3: yellow   */
@@ -119,15 +101,10 @@ static const char *colorname[] = {
 	"#FF92D0",  /* 13: brmagenta*/
 	"#9AEDFE",  /* 14: brcyan   */
 	"#E6E6E6",  /* 15: brwhite  */
-
-	[255] = 0,
-
-	/* Dark background */
-	"#0F161E",
-
+    [255] = 0,
 	/* more colors can be added after 255 to use with DefaultXX */
-	"#cccccc",
-	"#555555",
+	"#0F161E",  /* 256 -> bg */
+    "#F8F8F8",  /* 257 -> fg */
 };
 
 
@@ -135,10 +112,10 @@ static const char *colorname[] = {
  * Default colors (colorname index)
  * foreground, background, cursor, reverse cursor
  */
-unsigned int defaultfg = 7;
 unsigned int defaultbg = 256;
+unsigned int defaultfg = 257;
 static unsigned int defaultcs = 15;
-static unsigned int defaultrcs = 257;
+static unsigned int defaultrcs = 256;
 
 /*
  * Default shape of cursor
@@ -174,9 +151,13 @@ static unsigned int defaultattr = 11;
  * Beware that overloading Button1 will disable the selection.
  */
 static MouseShortcut mshortcuts[] = {
-	/* button               mask            string */
-	{ Button4,              XK_ANY_MOD,     "\031" },
-	{ Button5,              XK_ANY_MOD,     "\005" },
+    /* None :) - this allows mapping the scroll wheel without any mod to scrolling */
+};
+
+MouseKey mkeys[] = {
+	/* button               mask            function        argument */
+	{ Button4,              XK_ANY_MOD,      kscrollup,      {.i =  2} },
+	{ Button5,              XK_ANY_MOD,      kscrolldown,    {.i =  2} },
 };
 
 /* Internal keyboard shortcuts. */
@@ -195,8 +176,13 @@ static Shortcut shortcuts[] = {
 	{ TERMMOD,              XK_C,           clipcopy,       {.i =  0} },
 	{ TERMMOD,              XK_V,           clippaste,      {.i =  0} },
 	{ TERMMOD,              XK_Y,           selpaste,       {.i =  0} },
-	{ ShiftMask,            XK_Insert,      selpaste,       {.i =  0} },
 	{ TERMMOD,              XK_Num_Lock,    numlock,        {.i =  0} },
+    { TERMMOD,              XK_K,           zoom,           {.f = +2} },
+	{ TERMMOD,              XK_J,           zoom,           {.f = -2} },
+	{ MODKEY,               XK_Page_Up,     kscrollup,      {.i = -1} },
+	{ MODKEY,               XK_Page_Down,   kscrolldown,    {.i = -1} },
+    { ControlMask,               XK_j,           kscrollup,      {.i =  1} },
+    { ControlMask,               XK_k,           kscrolldown,    {.i =  1} },
 };
 
 /*
