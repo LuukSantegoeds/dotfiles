@@ -287,7 +287,7 @@ mode "resize" {
 }
 
 # Autostart applications
-exec --no-startup-id ~/bin/launch-polybar.sh
+exec --no-startup-id ~/bin/launch-polybar1.sh
 exec --no-startup-id nm-applet
 exec --no-startup-id insync start
 exec --no-startup-id blueman-applet

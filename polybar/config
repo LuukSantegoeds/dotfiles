@@ -19,8 +19,8 @@ secondary = #545454
 alert = #545454
 
 [bar/main]
-monitor = HDMI2
-monitor-fallback = eDP1
+monitor = ${env:MONITOR:}
+#monitor-fallback = eDP1
 width = 100%
 height = 24
 ;offset-x = 1%
