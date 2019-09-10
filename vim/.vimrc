@@ -21,3 +21,5 @@ set undolevels=1000
 set backspace=indent,eol,start
 
 syntax on
+
+autocmd InsertEnter,InsertLeave * set cul!
