@@ -102,4 +102,5 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias avans="cd /mnt/98d6955a-1b9b-42df-ba8d-8a8b7eb5bb41/GoogleDrive/Avans/BLOK13"
-alias start-ap="echo Your wifi password is LinuxIsGr8! ; echo This only works on 2.4Ghz ;sudo create_ap wlp2s0 wlp0s20f0u3 Switch-network LinuxIsGr8!"
+alias start-ap="echo Your wifi password is LinuxIsGr8! ; Only use on 2.4 Ghz ; sudo create_ap wlp0s20f0u3 wlp2s0 --freq-band 2.4 Switch-network LinuxIsGr8!"
+alias pi4B="ssh luuks@192.168.2.12"
