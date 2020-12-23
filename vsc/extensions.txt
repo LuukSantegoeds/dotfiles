@@ -1,0 +1,230 @@
+Name: Auto Close Tag
+Id: formulahendry.auto-close-tag
+Description: Automatically add HTML/XML close tag, same as Visual Studio IDE or Sublime Text
+Version: 0.5.9
+Publisher: Jun Han
+VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag
+
+Name: Auto Complete Tag
+Id: formulahendry.auto-complete-tag
+Description: Extension Packs to add close tag and rename paired tag automatically for HTML/XML
+Version: 0.1.0
+Publisher: Jun Han
+VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-complete-tag
+
+Name: Auto Rename Tag
+Id: formulahendry.auto-rename-tag
+Description: Auto rename paired HTML/XML tag
+Version: 0.1.5
+Publisher: Jun Han
+VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag
+
+Name: Babel ES6/ES7
+Id: dzannotti.vscode-babel-coloring
+Description: Adds JS Babel es6/es7 syntax coloring
+Version: 0.0.4
+Publisher: dzannotti
+VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=dzannotti.vscode-babel-coloring
+
+Name: Beautify Blade
+Id: apility.beautify-blade
+Description: Beautify Blade code in place for VS Code
+Version: 1.0.1
+Publisher: Apility AS
+VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=apility.beautify-blade
+
+Name: Color Highlight
+Id: naumovs.color-highlight
+Description: Highlight web colors in your editor
+Version: 2.3.0
+Publisher: Sergii Naumov
+VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=naumovs.color-highlight
+
+Name: Composer
+Id: ikappas.composer
+Description: PHP Composer for Visual Studio Code
+Version: 0.7.1
+Publisher: Ioannis Kappas
+VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=ikappas.composer
+
+Name: Copy Relative Path
+Id: alexdima.copy-relative-path
+Description: Copy Relative Path from a File
+Version: 0.0.2
+Publisher: alexdima
+VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=alexdima.copy-relative-path
+
+Name: Debugger for Firefox
+Id: firefox-devtools.vscode-firefox-debug
+Description: Debug your web application or browser extension in Firefox
+Version: 2.9.1
+Publisher: Firefox DevTools
+VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=firefox-devtools.vscode-firefox-debug
+
+Name: DotENV
+Id: mikestead.dotenv
+Description: Support for dotenv file syntax
+Version: 1.0.1
+Publisher: mikestead
+VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=mikestead.dotenv
+
+Name: EditorConfig for VS Code
+Id: editorconfig.editorconfig
+Description: EditorConfig Support for Visual Studio Code
+Version: 0.15.1
+Publisher: EditorConfig
+VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig
+
+Name: gitignore
+Id: codezombiech.gitignore
+Description: Language support for .gitignore files. Lets you pull .gitignore files from the https://github.com/github/gitignore repository.
+Version: 0.6.0
+Publisher: CodeZombie
+VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=codezombiech.gitignore
+
+Name: GitLens — Git supercharged
+Id: eamodio.gitlens
+Description: Supercharge the Git capabilities built into Visual Studio Code — Visualize code authorship at a glance via Git blame annotations and code lens, seamlessly navigate and explore Git repositories, gain valuable insights via powerful comparison commands, and so much more
+Version: 10.2.3
+Publisher: Eric Amodio
+VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens
+
+Name: IntelliSense for CSS class names in HTML
+Id: zignd.html-css-class-completion
+Description: CSS class name completion for the HTML class attribute based on the definitions found in your workspace.
+Version: 1.19.0
+Publisher: Zignd
+VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=Zignd.html-css-class-completion
+
+Name: Laravel Artisan
+Id: ryannaddy.laravel-artisan
+Description: Run Laravel Artisan commands within Visual Studio Code
+Version: 0.0.27
+Publisher: Ryan Naddy
+VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=ryannaddy.laravel-artisan
+
+Name: Laravel Blade Snippets
+Id: onecentlin.laravel-blade
+Description: Laravel blade snippets and syntax highlight support
+Version: 1.25.0
+Publisher: Winnie Lin
+VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=onecentlin.laravel-blade
+
+Name: Laravel Extension Pack
+Id: onecentlin.laravel-extension-pack
+Description: A collection of extensions for Laravel development
+Version: 1.0.0
+Publisher: Winnie Lin
+VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=onecentlin.laravel-extension-pack
+
+Name: Laravel Extra Intellisense
+Id: amiralizadeh9480.laravel-extra-intellisense
+Description: better intellisense for laravel projects.
+Version: 0.4.1
+Publisher: amir
+VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=amiralizadeh9480.laravel-extra-intellisense
+
+Name: Laravel goto view
+Id: codingyu.laravel-goto-view
+Description: Quick jump to view
+Version: 1.3.3
+Publisher: codingyu
+VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=codingyu.laravel-goto-view
+
+Name: Laravel Helpers
+Id: rafa-acioly.laravel-helpers
+Description: A set of Laravel Helper Snippets for Visual Studio Code
+Version: 0.2.2
+Publisher: rafa-acioly
+VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=rafa-acioly.laravel-helpers
+
+Name: Laravel Snippets
+Id: onecentlin.laravel5-snippets
+Description: Laravel snippets for Visual Studio Code  (Support Laravel 5 and above)
+Version: 1.10.0
+Publisher: Winnie Lin
+VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=onecentlin.laravel5-snippets
+
+Name: laravel-goto-controller
+Id: stef-k.laravel-goto-controller
+Description: Alt + click to navigate from a route to a respective controller file
+Version: 0.0.12
+Publisher: stef-k
+VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=stef-k.laravel-goto-controller
+
+Name: markdownlint
+Id: davidanson.vscode-markdownlint
+Description: Markdown linting and style checking for Visual Studio Code
+Version: 0.38.0
+Publisher: David Anson
+VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint
+
+Name: Material Icon Theme
+Id: pkief.material-icon-theme
+Description: Material Design Icons for Visual Studio Code
+Version: 4.4.0
+Publisher: Philipp Kief
+VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme
+
+Name: Path Intellisense
+Id: christian-kohler.path-intellisense
+Description: Visual Studio Code plugin that autocompletes filenames
+Version: 2.3.0
+Publisher: Christian Kohler
+VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense
+
+Name: PHP Debug
+Id: felixfbecker.php-debug
+Description: Debug support for PHP with XDebug
+Version: 1.14.0
+Publisher: Felix Becker
+VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=felixfbecker.php-debug
+
+Name: PHP Intelephense
+Id: bmewburn.vscode-intelephense-client
+Description: PHP code intelligence for Visual Studio Code
+Version: 1.5.4
+Publisher: Ben Mewburn
+VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=bmewburn.vscode-intelephense-client
+
+Name: PHP IntelliSense
+Id: felixfbecker.php-intellisense
+Description: Advanced Autocompletion and Refactoring support for PHP
+Version: 2.3.14
+Publisher: Felix Becker
+VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=felixfbecker.php-intellisense
+
+Name: PHP Namespace Resolver
+Id: mehedidracula.php-namespace-resolver
+Description: Import and expand php namespaces
+Version: 1.1.8
+Publisher: Mehedi Hassan
+VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=MehediDracula.php-namespace-resolver
+
+Name: Prettier - Code formatter
+Id: esbenp.prettier-vscode
+Description: Code formatter using prettier
+Version: 5.8.0
+Publisher: Prettier
+VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode
+
+Name: TODO Highlight
+Id: wayou.vscode-todo-highlight
+Description: highlight TODOs, FIXMEs, and any keywords, annotations...
+Version: 1.0.4
+Publisher: Wayou Liu
+VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=wayou.vscode-todo-highlight
+
+Name: TODO Highlight
+Id: wayou.vscode-todo-highlight
+Description: highlight TODOs, FIXMEs, and any keywords, annotations...
+Version: 1.0.4
+Publisher: Wayou Liu
+VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=wayou.vscode-todo-highlight
+
+Name: Todo+
+Id: fabiospampinato.vscode-todo-plus
+Description: Manage todo lists with ease. Powerful, easy to use and customizable.
+Version: 4.18.0
+Publisher: Fabio Spampinato
+VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=fabiospampinato.vscode-todo-plus
